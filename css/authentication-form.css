@@ -24,6 +24,14 @@ p {
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 10px;
+}
+
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
@@ -62,8 +70,8 @@ input[type="radio"] {
 }
 
 input[type="submit"] {
-  width: unset;
-  height: unset;
+  width: 100px;
+  height: 50px;
   padding: 14px 20px;
   background: #335eea;
   color: white;
@@ -83,3 +91,76 @@ input[type="submit"]:hover {
 .form select {
   height: 30px;
 }
+
+.form-header {
+  height: 60px;
+}
+
+.form-input-control label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-input-control {
+  margin-bottom: 30px;
+}
+
+.form-checkbox-control {
+  height: 30px;
+}
+
+.form-submit-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 30px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.form-group-horizontal-control .form-input-control {
+  width: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+  height: 30px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  font-weight: normal;
+}
+
+.form-group-horizontal-control select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.form-group-vertical-control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-radio-control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
